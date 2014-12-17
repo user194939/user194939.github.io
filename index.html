@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>anne4ka test slider</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/ideal-image-slider.css">
+    <link rel="stylesheet" href="css/themes/default.css">
+
+    <style media="screen">
+        #slider {
+            max-width: 900px;
+            margin: 50px auto;
+        }
+    </style>
+</head>
+<body>
+	<div id="slider">
+        <a href="img/01.jpg" target="_blank">
+            <img src="img/01.jpg" alt="img01">
+        </a>
+        <a href="img/02.jpg" target="_blank">
+            <img data-src="img/02.jpg" src="" alt="img02">
+        </a>
+        <a href="img/03.jpg" target="_blank">
+            <img data-src="img/03.jpg" src="" alt="img03">
+        </a>
+        <a href="img/04.jpg" target="_blank">
+            <img data-src="img/04.jpg" src="" alt="img04">
+        </a>
+	</div>
+
+    <script src="js/ideal-image-slider.js"></script>
+    <script src="js/extensions/iis-bullet-nav.js"></script>
+
+	<script>
+        var slider = new IdealImageSlider.Slider('#slider');
+        slider.addBulletNav();
+	</script>
+</body>
+</html>
