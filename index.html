@@ -18,6 +18,7 @@
         }
     </style>
 </head>
+
 <body>
     <div id="slider">
         <a href="img/01.jpg" target="_blank">
@@ -38,7 +39,10 @@
     <script src="js/extensions/iis-bullet-nav.min.js"></script>
 
     <script>
-        var slider = new IdealImageSlider.Slider('#slider');
+        var slider = new IdealImageSlider.Slider({
+            selector: '#slider',
+            effect: 'fade'
+        });
         slider.addBulletNav();
     </script>
 </body>
